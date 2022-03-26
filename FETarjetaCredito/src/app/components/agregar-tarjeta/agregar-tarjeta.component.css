@@ -1,0 +1,12 @@
+/* Estilos propios del componente Agregar Tarjeta */
+
+
+/* cambio de color el icono según pasa o no la validación */
+
+.green-icon {
+    color: #198754;
+}
+
+.red-icon {
+    color: #dc3545;
+}

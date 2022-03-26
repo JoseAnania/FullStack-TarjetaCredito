@@ -1,0 +1,8 @@
+/* Estilos personalizados del Componente Listar Tarjeta */
+
+
+/* Para que el cursor cambie al posarse sobre los íconos */
+
+.far {
+    cursor: pointer;
+}

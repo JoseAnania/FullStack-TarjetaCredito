@@ -1,0 +1,23 @@
+<!--HTML del Componente Listar Tarjeta-->
+<div class="card">
+    <div class="card-body">
+        <h5 class="titulo">LISTADO DE TARJETA</h5>
+        <table class="table">
+            <tbody>
+                <!--Usamos Ng For para iterar en el arreglo creado-->
+                <tr *ngFor="let tarjeta of listTarjetas">
+                    <!--Interpolación-->
+                    <td>{{tarjeta.titular}}</td>
+                    <td>{{tarjeta.numeroTarjeta}}</td>
+                    <td>{{tarjeta.fechaExpiracion}}</td>
+                    <td>
+                        <i class="far fa-edit text-info"></i>
+                    </td>
+                    <td>
+                        <i (click)="eliminarTarjeta(tarjeta.id)" class="far fa-trash-alt text-danger"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
